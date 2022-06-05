@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view_from_pgbench</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+        }
+
+        content {
+            width: 70vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #bench_data{
+            width: 30vw;
+            height: calc(100vh - 4px);
+            resize: none;
+            padding: 0;
+            margin: 0;
+            border-top: 0;
+            border-bottom: 0;
+            margin-right: 10px;
+        }
+
+        #canvas {
+            width: 100%;
+            height: 90%;
+        }
+
+        #legend {
+            width: 100%;
+            height: 10%;
+            display: flex;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            padding-left: 28px;
+        }
+
+        .legend-color{
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;     
+        }
+
+
+    </style>
+</head>
+<body>
+    <textarea id="bench_data"></textarea>
+    <content>
+        <canvas id="canvas"></canvas>
+        <div id="legend"></div>
+    </content>
+</body>
+<script src="script.js"></script>
+</html>
